@@ -1,0 +1,1180 @@
+[debug] [2019-06-24T15:08:48.042Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:08:48.044Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:08:48.044Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:08:48.044Z] Platform:      darwin
+[debug] [2019-06-24T15:08:48.044Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:08:48.045Z] Time:          Mon Jun 24 2019 17:08:48 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:08:48.045Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:08:48.053Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:08:48.053Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:08:48.053Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:08:48.054Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:08:48.369Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:08:48.371Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:08:49.171Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:08:49.180Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:08:49.409Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:08:49.665Z] Functions runtime initialized.
+[debug] [2019-06-24T15:08:49.665Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:08:49.719Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Missing "keyFilePath" from config (should be where your JSON file is)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:18:11)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:09:39.660Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:09:40.958Z] Functions runtime initialized.
+[debug] [2019-06-24T15:09:40.959Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:09:41.016Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received type object
+    at validateString (internal/validators.js:125:11)
+    at Module.require (internal/modules/cjs/loader.js:632:3)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:09:44.074Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:09:44.076Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:09:44.076Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:09:44.076Z] Platform:      darwin
+[debug] [2019-06-24T15:09:44.076Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:09:44.077Z] Time:          Mon Jun 24 2019 17:09:44 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:09:44.077Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:09:44.085Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:09:44.085Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:09:44.085Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:09:44.087Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:09:44.969Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:09:44.971Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:09:45.170Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:09:45.180Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:09:45.376Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:09:45.633Z] Functions runtime initialized.
+[debug] [2019-06-24T15:09:45.633Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:09:45.688Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received type object
+    at validateString (internal/validators.js:125:11)
+    at Module.require (internal/modules/cjs/loader.js:632:3)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:10:34.218Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:10:35.485Z] Functions runtime initialized.
+[debug] [2019-06-24T15:10:35.486Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:10:35.543Z] firebase-admin has been stubbed.
+[warn] ⚠  /Users/theo/github/lifecycle/functions/index.js:31
+        keyFilePath: ./theolocal_key_newagent-68b9b.json,
+                     ^
+
+SyntaxError: Unexpected token .
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:10:38.827Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:10:40.089Z] Functions runtime initialized.
+[debug] [2019-06-24T15:10:40.089Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:10:40.145Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Cannot find module './theolocal_key_newagent-68b9b.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:10:49.851Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:10:49.853Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:10:49.853Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:10:49.853Z] Platform:      darwin
+[debug] [2019-06-24T15:10:49.853Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:10:49.855Z] Time:          Mon Jun 24 2019 17:10:49 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:10:49.855Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:10:49.862Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:10:49.862Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:10:49.863Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:10:49.864Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:10:50.117Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:10:50.119Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:10:50.909Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:10:50.919Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:10:51.143Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:10:51.399Z] Functions runtime initialized.
+[debug] [2019-06-24T15:10:51.399Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:10:51.453Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Cannot find module './theolocal_key_newagent-68b9b.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:12:03.241Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:12:04.583Z] Functions runtime initialized.
+[debug] [2019-06-24T15:12:04.584Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:12:04.658Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Cannot find module 'theolocal_key_newagent-68b9b.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:12:08.420Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:12:08.422Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:12:08.422Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:12:08.422Z] Platform:      darwin
+[debug] [2019-06-24T15:12:08.422Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:12:08.423Z] Time:          Mon Jun 24 2019 17:12:08 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:12:08.423Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:12:08.432Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:12:08.433Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:12:08.433Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:12:08.434Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:12:09.319Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:12:09.321Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:12:10.151Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:12:10.161Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:12:10.393Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:12:10.654Z] Functions runtime initialized.
+[debug] [2019-06-24T15:12:10.654Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:12:10.708Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Cannot find module 'theolocal_key_newagent-68b9b.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:12:20.288Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:12:21.566Z] Functions runtime initialized.
+[debug] [2019-06-24T15:12:21.566Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:12:21.628Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Cannot find module './theolocal_key_newagent-68b9b.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:12:25.467Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:12:25.469Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:12:25.469Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:12:25.469Z] Platform:      darwin
+[debug] [2019-06-24T15:12:25.469Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:12:25.471Z] Time:          Mon Jun 24 2019 17:12:25 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:12:25.471Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:12:25.478Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:12:25.479Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:12:25.479Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:12:25.480Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:12:26.316Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:12:26.318Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:12:27.097Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:12:27.106Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:12:27.324Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:12:27.589Z] Functions runtime initialized.
+[debug] [2019-06-24T15:12:27.589Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:12:27.643Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Cannot find module './theolocal_key_newagent-68b9b.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:12:45.990Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:12:47.247Z] Functions runtime initialized.
+[debug] [2019-06-24T15:12:47.248Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:12:47.306Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  TypeError: Cannot read property 'client_id' of undefined
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:27:38)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:12:52.012Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:12:52.014Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:12:52.014Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:12:52.014Z] Platform:      darwin
+[debug] [2019-06-24T15:12:52.014Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:12:52.015Z] Time:          Mon Jun 24 2019 17:12:52 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:12:52.015Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:12:52.023Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:12:52.023Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:12:52.023Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:12:52.025Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:12:52.858Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:12:52.860Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:12:53.812Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:12:53.821Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:12:54.006Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:12:54.266Z] Functions runtime initialized.
+[debug] [2019-06-24T15:12:54.267Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:12:54.320Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  TypeError: Cannot read property 'client_id' of undefined
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:27:38)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:20:11.242Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:20:12.659Z] Functions runtime initialized.
+[debug] [2019-06-24T15:20:12.660Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:20:12.748Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Missing "keyFilePath" from config (should be where your JSON file is)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:18:11)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:20:16.780Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:20:16.782Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:20:16.782Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:20:16.782Z] Platform:      darwin
+[debug] [2019-06-24T15:20:16.782Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:20:16.783Z] Time:          Mon Jun 24 2019 17:20:16 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:20:16.783Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:20:16.794Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:20:16.795Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:20:16.795Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:20:16.796Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:20:17.621Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:20:17.622Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:20:18.379Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:20:18.388Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:20:18.637Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:20:18.904Z] Functions runtime initialized.
+[debug] [2019-06-24T15:20:18.904Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:20:18.959Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Missing "keyFilePath" from config (should be where your JSON file is)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:18:11)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:20:56.103Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:20:57.369Z] Functions runtime initialized.
+[debug] [2019-06-24T15:20:57.370Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:20:57.427Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Missing "keyFilePath" from config (should be where your JSON file is)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:18:11)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:21:02.170Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:21:02.172Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:21:02.172Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:21:02.172Z] Platform:      darwin
+[debug] [2019-06-24T15:21:02.172Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:21:02.173Z] Time:          Mon Jun 24 2019 17:21:02 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:21:02.174Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:21:02.181Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:21:02.181Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:21:02.181Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:21:02.183Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:21:03.048Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:21:03.050Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:21:03.880Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:21:03.889Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:21:04.123Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:21:04.386Z] Functions runtime initialized.
+[debug] [2019-06-24T15:21:04.386Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:21:04.439Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  Error: Missing "keyFilePath" from config (should be where your JSON file is)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:18:11)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:21:31.487Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:21:32.737Z] Functions runtime initialized.
+[debug] [2019-06-24T15:21:32.738Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:21:32.799Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  TypeError: Cannot read property 'client_id' of undefined
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:27:38)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:22:57.930Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:22:59.188Z] Functions runtime initialized.
+[debug] [2019-06-24T15:22:59.188Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:22:59.246Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  TypeError: Cannot read property 'client_id' of undefined
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:27:38)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:23:04.478Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:23:04.480Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:23:04.480Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:23:04.480Z] Platform:      darwin
+[debug] [2019-06-24T15:23:04.480Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:23:04.481Z] Time:          Mon Jun 24 2019 17:23:04 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:23:04.481Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:23:04.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:23:04.489Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:23:04.489Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:23:04.491Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:23:05.297Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:23:05.299Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:23:06.070Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:23:06.080Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:23:06.373Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:23:06.635Z] Functions runtime initialized.
+[debug] [2019-06-24T15:23:06.635Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:23:06.689Z] firebase-admin has been stubbed.
+[info] >  { type: 'service_account',
+[info] >    project_id: 'newagent-68b9b',
+[info] >    private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >    private_key:
+[info] >     '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >    client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >    client_id: '108831015122055920154',
+[info] >    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >    token_uri: 'https://oauth2.googleapis.com/token',
+[info] >    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >    client_x509_cert_url:
+[info] >     'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' }
+[warn] ⚠  TypeError: Cannot read property 'client_id' of undefined
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:27:38)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:23:21.926Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:23:23.194Z] Functions runtime initialized.
+[debug] [2019-06-24T15:23:23.194Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:23:23.252Z] firebase-admin has been stubbed.
+[warn] ⚠  ReferenceError: auth is not defined
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:37:13)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at /Users/theo/.nvm/versions/node/v10.15.3/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:532:33
+    at Generator.next (<anonymous>)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:23:27.419Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:23:27.421Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:23:27.421Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:23:27.421Z] Platform:      darwin
+[debug] [2019-06-24T15:23:27.421Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:23:27.422Z] Time:          Mon Jun 24 2019 17:23:27 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:23:27.423Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:23:27.430Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:23:27.430Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:23:27.430Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:23:27.432Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:23:28.441Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:23:28.443Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:23:29.273Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:23:29.283Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:23:29.541Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:23:29.799Z] Functions runtime initialized.
+[debug] [2019-06-24T15:23:29.799Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:23:29.852Z] firebase-admin has been stubbed.
+[warn] ⚠  ReferenceError: auth is not defined
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:37:13)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at /Users/theo/.nvm/versions/node/v10.15.3/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:532:33
+    at Generator.next (<anonymous>)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:23:42.765Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:23:44.023Z] Functions runtime initialized.
+[debug] [2019-06-24T15:23:44.023Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:23:44.082Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath:
+[info] >     '/Users/theo/github/lifecycle/functions/theolocal_key_newagent-68b9b.json',
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[warn] ⚠  TypeError: Cannot read property 'client_id' of undefined
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:27:38)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:23:48.617Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:23:48.619Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:23:48.619Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:23:48.619Z] Platform:      darwin
+[debug] [2019-06-24T15:23:48.619Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:23:48.621Z] Time:          Mon Jun 24 2019 17:23:48 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:23:48.621Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:23:48.628Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:23:48.628Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:23:48.629Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:23:48.630Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:23:49.438Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:23:49.440Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:23:50.372Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:23:50.381Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:23:50.692Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:23:50.958Z] Functions runtime initialized.
+[debug] [2019-06-24T15:23:50.959Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:23:51.013Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath:
+[info] >     '/Users/theo/github/lifecycle/functions/theolocal_key_newagent-68b9b.json',
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[warn] ⚠  TypeError: Cannot read property 'client_id' of undefined
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:27:38)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:25:51.104Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:25:52.368Z] Functions runtime initialized.
+[debug] [2019-06-24T15:25:52.369Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:25:52.428Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath:
+[info] >     { type: 'service_account',
+[info] >       project_id: 'newagent-68b9b',
+[info] >       private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >       private_key:
+[info] >        '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >       client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >       client_id: '108831015122055920154',
+[info] >       auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >       token_uri: 'https://oauth2.googleapis.com/token',
+[info] >       auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >       client_x509_cert_url:
+[info] >        'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' },
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[warn] ⚠  TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received type object
+    at validateString (internal/validators.js:125:11)
+    at Module.require (internal/modules/cjs/loader.js:632:3)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:25:57.239Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:25:57.241Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:25:57.242Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:25:57.242Z] Platform:      darwin
+[debug] [2019-06-24T15:25:57.242Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:25:57.243Z] Time:          Mon Jun 24 2019 17:25:57 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:25:57.243Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:25:57.253Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:25:57.253Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:25:57.253Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:25:57.256Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:25:57.510Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:25:57.512Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:25:58.299Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:25:58.308Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:25:58.538Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:25:58.804Z] Functions runtime initialized.
+[debug] [2019-06-24T15:25:58.804Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:25:58.858Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath:
+[info] >     { type: 'service_account',
+[info] >       project_id: 'newagent-68b9b',
+[info] >       private_key_id: 'b4efd8d85ccf747842ef2f645131273c143e75d2',
+[info] >       private_key:
+[info] >        '-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCshQP8TwFWWpXC\nQdhhm1kEa0+2C591zppv82PTLszI9k9fGobiwUcr4uhuZKXhwNXBf454o+urnbj1\nQIAz7rjUP1Zoc57Q4RBDf+OkEknsgEoQHwTmGWMlkjU0guPMx1w9u6aRCtcM98Va\n987w8AP4AWBkqZJoBcWh0eqsq5nnfcLs4uTA0GqllKFe35ra7CopAmSFEjBlpDjG\nWlLO13rdkQCY1N9XRqrGJSdxboyEwz6/AhO4MU2i/g6SewpFTplpgXXXsq8fGKL/\nfFj2Fzokbf/WvQxc8VBbuz6+bLy9udfz3UKPFA010RabD2CKf8y6UATSPxBqakst\nIHh8sdlXAgMBAAECggEAM0QXyhtkJ1gl1qMgfOjgDAsjldJgYW6yv//Qs0nd+v4O\n2hEU8j9DOgxky6FHFg3qt2SDXuA/QTFObDrtngEblZ74u3NYR3QKFDTl3bS9mPUK\njT3ag9IZf2myO9eFgC3iAEpKFiHlg+oBEKZBLaH1W/Z0wZUOd7D3aL3rgcJAquRc\nAUsCjZ0JW+9d/EGSAwv+yMnZiUovm/XriKEpAgE4f6meNvxhCDB2+7LzjzkMS85z\nDr65hrw6LdH6faMNnOSTj/zOGOFCMXT+ubsmSmqogHf1s0f8n4DGX5V+vtctegDG\nT/Pl0jbWkOT2Am45JTpeZngnyQw/mtbw2YMYKq55yQKBgQDjwEp2YSx4P3UCs/c3\n4s+6V1zE85cLOYr1WFVVODiN9r1pxksGOShFAZFtvS29nm13ax3/n1Ybz+doCntH\nlLxsc8YsEt1ODiDOnmgvmH9E8j4YZJLEg/hiR3SW2wQKKhR+TizLXByuzlGu4Ynu\nmCWo92DaHf1h4EJ0QRjL97+vkwKBgQDB6vmgsqTJ3CS4m5Yiazjl52FsJ/gklCye\nnBwu6A0ql8wBjWabIZh8jytnH+PaSQgRG7z0ivwfxpk+GUwhSEMxsqXEwhg75VLy\n4Rz+qbr9jfxzvXAYZo11JzGHAhPQ1ZQFVqHWkKR3PSMq5bmcOnjnbYKmqMsrpzZQ\n+yXEZMjhrQKBgQCF5AXikj4SczvW2vX7ZNu6MKHZJ1skvi9zDPsdnm+hBe1Uwb5Z\nakDCUKmuWgkJ8JlqGw8HuCRnNVJVV9QhwM8E8wsN3gk8WhHvZjDZyk0Hu2HF9VpT\nLUJYhKmGBjvZveNOXab35q72FVTv+qecHNYG/2dw0zCi2bQ3pA1v27ZVAQKBgQCi\ncaizyXLp9pR8YTmfk5qSXQXriIAChG3sYHHriVCeQZMQKdeuVLJchcKiHMDO9ybe\nzhG3+UXDiKaOsrpnlxVS6IidDssmQbD+7T1Qx/ZwuSSmACeLCT2uyipfIopfAsuA\nvVXNXFWp3Xk8Ujzudr0ZgU9VNUkdRHHn3LuCjbsJ8QKBgQCGE3j3cpXub1iwCHZj\niSFsYUCr5qwQj+moCM+cXUT2BAiEx8eqHu733bsXAWBtMR54aUqn/SHxUFW9sorj\nMGYHJRMQ8ZNIKWLewPsocW3L07TudKM4HDnZSlJaknJ3ofXTE7UQHwxSFLUUUot0\nZQH91CNVJ1VVbkCpbHjOp4ApKQ==\n-----END PRIVATE KEY-----\n',
+[info] >       client_email: 'theolocal@newagent-68b9b.iam.gserviceaccount.com',
+[info] >       client_id: '108831015122055920154',
+[info] >       auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >       token_uri: 'https://oauth2.googleapis.com/token',
+[info] >       auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >       client_x509_cert_url:
+[info] >        'https://www.googleapis.com/robot/v1/metadata/x509/theolocal%40newagent-68b9b.iam.gserviceaccount.com' },
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[warn] ⚠  TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received type object
+    at validateString (internal/validators.js:125:11)
+    at Module.require (internal/modules/cjs/loader.js:632:3)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:28:18.424Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:28:18.425Z] File /Users/theo/github/lifecycle/functions/theo.json changed, reloading triggers
+[debug] [2019-06-24T15:28:19.731Z] Functions runtime initialized.
+[debug] [2019-06-24T15:28:19.731Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:28:19.789Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath:
+[info] >     { installed:
+[info] >        { client_id:
+[info] >           '498650659496-d6j598p0v4dgkddkgkegv3qajrl5n4tp.apps.googleusercontent.com',
+[info] >          project_id: 'newagent-68b9b',
+[info] >          auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >          token_uri: 'https://oauth2.googleapis.com/token',
+[info] >          auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >          client_secret: 'QkLximsOTlAhWR2WU6rceyB_',
+[info] >          redirect_uris: [Array] } },
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[warn] ⚠  TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received type object
+    at validateString (internal/validators.js:125:11)
+    at Module.require (internal/modules/cjs/loader.js:632:3)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:28:23.714Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:28:23.716Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:28:23.716Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:28:23.716Z] Platform:      darwin
+[debug] [2019-06-24T15:28:23.717Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:28:23.718Z] Time:          Mon Jun 24 2019 17:28:23 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:28:23.718Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:28:23.727Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:28:23.727Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:28:23.728Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:28:23.729Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-24T15:28:23.729Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-24T15:28:23.886Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:28:23.908Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:28:24.122Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:28:24.123Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:28:24.903Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:28:24.912Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:28:25.145Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:28:25.409Z] Functions runtime initialized.
+[debug] [2019-06-24T15:28:25.410Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:28:25.464Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath:
+[info] >     { installed:
+[info] >        { client_id:
+[info] >           '498650659496-d6j598p0v4dgkddkgkegv3qajrl5n4tp.apps.googleusercontent.com',
+[info] >          project_id: 'newagent-68b9b',
+[info] >          auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+[info] >          token_uri: 'https://oauth2.googleapis.com/token',
+[info] >          auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+[info] >          client_secret: 'QkLximsOTlAhWR2WU6rceyB_',
+[info] >          redirect_uris: [Array] } },
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[warn] ⚠  TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received type object
+    at validateString (internal/validators.js:125:11)
+    at Module.require (internal/modules/cjs/loader.js:632:3)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:29:10.306Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:29:11.571Z] Functions runtime initialized.
+[debug] [2019-06-24T15:29:11.572Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:29:11.630Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath: './theo.json',
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[warn] ⚠  Error: Cannot find module './theo.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:29:15.614Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:29:15.616Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:29:15.616Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:29:15.616Z] Platform:      darwin
+[debug] [2019-06-24T15:29:15.616Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:29:15.618Z] Time:          Mon Jun 24 2019 17:29:15 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:29:15.618Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:29:15.628Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:29:15.628Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:29:15.628Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:29:15.629Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:29:16.676Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:29:16.678Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:29:17.507Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:29:17.516Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:29:17.753Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:29:18.014Z] Functions runtime initialized.
+[debug] [2019-06-24T15:29:18.014Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:29:18.069Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath: './theo.json',
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[warn] ⚠  Error: Cannot find module './theo.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at new Auth (/Users/theo/node_modules/google-assistant/components/auth.js:26:15)
+    at new GoogleAssistant (/Users/theo/node_modules/google-assistant/index.js:21:16)
+    at Object.<anonymous> (/Users/theo/github/lifecycle/functions/index.js:38:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:29:31.649Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:29:32.919Z] Functions runtime initialized.
+[debug] [2019-06-24T15:29:32.920Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:29:32.978Z] firebase-admin has been stubbed.
+[warn] ⚠  /Users/theo/github/lifecycle/functions/index.js:31
+        keyFilePath: path.resolve(''./theo.json'),
+                                     ^
+
+SyntaxError: Unexpected token /
+    at new Script (vm.js:80:7)
+    at createScript (vm.js:274:10)
+    at Object.runInThisContext (vm.js:326:10)
+    at Module._compile (internal/modules/cjs/loader.js:664:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2019-06-24T15:29:34.965Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:29:36.258Z] Functions runtime initialized.
+[debug] [2019-06-24T15:29:36.259Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:29:36.318Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath: '/Users/theo/github/lifecycle/functions/theo.json',
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/newagent-68b9b/us-central1/dialogflowFirebaseFulfillment
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/newagent-68b9b/us-central1/sentiment
+[info] >  Opening OAuth URL. Return here with your code.
+[debug] [2019-06-24T15:30:45.587Z] File /Users/theo/github/lifecycle/functions/token.json changed, reloading triggers
+[debug] [2019-06-24T15:30:46.850Z] Functions runtime initialized.
+[debug] [2019-06-24T15:30:46.851Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:30:46.908Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath: '/Users/theo/github/lifecycle/functions/theo.json',
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[info] >  Opening OAuth URL. Return here with your code.
+[debug] [2019-06-24T15:31:01.627Z] File /Users/theo/github/lifecycle/functions/token.json changed, reloading triggers
+[debug] [2019-06-24T15:31:03.004Z] Functions runtime initialized.
+[debug] [2019-06-24T15:31:03.005Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:31:03.083Z] firebase-admin has been stubbed.
+[debug] [2019-06-24T15:31:06.250Z] ----------------------------------------------------------------------
+[debug] [2019-06-24T15:31:06.252Z] Command:       /Users/theo/.nvm/versions/node/v10.15.3/bin/node /Users/theo/.nvm/versions/node/v10.15.3/bin/firebase serve
+[debug] [2019-06-24T15:31:06.252Z] CLI Version:   7.0.1
+[debug] [2019-06-24T15:31:06.252Z] Platform:      darwin
+[debug] [2019-06-24T15:31:06.252Z] Node Version:  v10.15.3
+[debug] [2019-06-24T15:31:06.253Z] Time:          Mon Jun 24 2019 17:31:06 GMT+0200 (Central European Summer Time)
+[debug] [2019-06-24T15:31:06.253Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-24T15:31:06.262Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-24T15:31:06.262Z] > authorizing via signed-in user
+[debug] [2019-06-24T15:31:06.263Z] [iam] checking project newagent-68b9b for permissions ["firebase.projects.get"]
+[debug] [2019-06-24T15:31:06.264Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b:testIamPermissions  
+
+[debug] [2019-06-24T15:31:07.127Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-24T15:31:07.129Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/newagent-68b9b  
+ 
+[debug] [2019-06-24T15:31:07.912Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/theo/github/lifecycle'...
+[info] 
+[info] ✔  functions: Using node@10 from host.
+[debug] [2019-06-24T15:31:07.921Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/498650659496:getServerAppConfig  
+ 
+[debug] [2019-06-24T15:31:08.138Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/theo/github/lifecycle/functions" for Cloud Functions...
+[debug] [2019-06-24T15:31:08.397Z] Functions runtime initialized.
+[debug] [2019-06-24T15:31:08.398Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:31:08.451Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath: '/Users/theo/github/lifecycle/functions/theo.json',
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/newagent-68b9b/us-central1/dialogflowFirebaseFulfillment
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/newagent-68b9b/us-central1/sentiment
+[info] >  Opening OAuth URL. Return here with your code.
+[debug] [2019-06-24T15:32:30.549Z] File /Users/theo/github/lifecycle/functions/index.js changed, reloading triggers
+[debug] [2019-06-24T15:32:31.822Z] Functions runtime initialized.
+[debug] [2019-06-24T15:32:31.823Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-24T15:32:31.878Z] firebase-admin has been stubbed.
+[info] >  { keyFilePath: '/Users/theo/github/lifecycle/functions/theo.json',
+[info] >    savedTokensPath: '/Users/theo/github/lifecycle/functions/tokens.json' }
+[info] >  Opening OAuth URL. Return here with your code.
