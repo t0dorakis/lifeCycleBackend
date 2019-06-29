@@ -1,30 +1,32 @@
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-const { dialogflow } = require('actions-on-google');
-const dialogue = require('./dialogue/index')
-const databaseService = require('./services/databaseService')
+//const functions = require('firebase-functions');
+//const admin = require('firebase-admin');
+const { functions } = require('./firebase')
+
+const { dialogflow: dialogflowFromActions } = require('actions-on-google');
+// const dialogflow = require('dialogflow');
+const dialogue = require('./dialogueService')
 // const GoogleAssistant = require('google-assistant');
 const path = require('path');
+const uuid = require('uuid');
+const analyzeSentiment = require('./sentimentService')
 
-const secretKey = require('./theo.json')
-
-// natural language ML
-// Imports the Google Cloud client library
-const language = require('@google-cloud/language');
+//admin.initializeApp(functions.config().firebase);
 
 // api routing
 const express = require('express');
 const cors = require('cors');
+
+const secretKey = require('./theo.json')
+
+// own imports
+const { createNewLife, createNewLifeName } = require('./dialogueService.js');
+
+
+// const bodyParser = require("body-parser");
 const router = express();
+router.use(express.json());       // to support JSON-encoded bodies
+router.use(express.urlencoded({extended: true})); // to support URL-encoded bodies
 
-
-// Instantiates a client
-const projectId = 'newagent-68b9b'
-const keyFilename = 'theolocal_key_newagent-68b9b.json'
-const languageClient = new language.LanguageServiceClient({projectId, keyFilename});
-
-admin.initializeApp(functions.config().firebase);
-let db = admin.firestore();
 
 // const config = {
 //     auth: {
@@ -37,13 +39,25 @@ let db = admin.firestore();
 // console.dir(config.auth)
 // const assistant = new GoogleAssistant(config.auth);
 
-
 const TEST_INTENT = "start test";
 const FEEL_INTENT = 'howDoYouFeel';
 const TIME_INTENT = "start time test";
 
+const CREATE_LIFE_INTENT = "createNewLife"
+const CREATE_LIFE_NAME_FOLLOWUP = "createNewLifeName"
 
-const app = dialogflow();
+// const agent = new WebhookClient({request, response});
+const app = dialogflowFromActions();
+
+
+app.intent(CREATE_LIFE_INTENT, async (conv, params) => {
+    console.log(params)
+
+    conv.ask(await createNewLife(conv));
+});
+app.intent(CREATE_LIFE_NAME_FOLLOWUP, async (conv, params) => {
+    conv.ask(await createNewLifeName(conv, params));
+});
 
 app.intent(FEEL_INTENT, (conv, params) => {
     analyzeSentiment(conv.query)
@@ -69,26 +83,24 @@ app.intent(TIME_INTENT, (conv) => {
 conv.ask(`starting the test with time ${localTime}`);
 });
 
+router.get('/test', async (req, res) => {
+    // const test = await runSample();
+    res.send(test)
+})
 
-router.get('/:id', (req, res) => {
-    res.send('hello worls' + req.params.id)
-    analyzeSentiment('hillary clinton').catch(console.error);
-});
+router.post('/sentimentAnalysis', async (req, res, next) => {
+    // console.log('req.text', req.text)
+    // console.log('req.body', req.body)
+    // console.log('req', req)
+    const text = req.body
+    // console.log(text)
+    const sentiment = await analyzeSentiment(text).catch(console.error)
+    res.send(sentiment)
+    res.status(500).send('Something broke!')
+    })
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);
-exports.sentiment = functions.https.onRequest(router);
-
+exports.api = functions.https.onRequest(router);
+exports._middleware = functions.https.onRequest(app);
 // The text to analyze
 // const text = 'Hello, world!';
-
-const analyzeSentiment = async (text) => {
-    const document =  {
-        content: text,
-        type: 'PLAIN_TEXT',
-    }
-    const [result] = await languageClient.analyzeSentiment({document})
-    const sentiment = result.documentSentiment;
-    console.log(`Text: ${text}`);
-    console.log(`Sentiment score: ${sentiment.score}`);
-    console.log(`Sentiment magnitude: ${sentiment.magnitude}`);
-}

@@ -1,1 +1,7 @@
-theolocal_key_newagent-68b9b
+build
+node_modules
+
+serviceAccountKey.json
+theo.json
+token.json
+theolocal_key_newagent-68b9b.json

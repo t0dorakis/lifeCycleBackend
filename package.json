@@ -5,23 +5,32 @@
     "node": "10"
   },
   "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase serve --only functions",
+    "lint": "eslint . --ignore-path .gitignore",
+    "serve": "yarn firebase serve --only functions",
     "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "test": "ava --verbose",
+    "watch": "yarn build --watch",
+    "start": "yarn run shell",
+    "deploy": "firebase deploy --only functions:dialogflowFirebaseFulfillment,functions:api",
+    "logs": "firebase functions:log",
+    "prebuild": "node node_modules/rimraf/bin build",
+    "build": "babel *.js *.json --out-dir build --copy-files --ignore node_modules",
+    "postbuild": "cd build && yarn install --production -s"
   },
   "dependencies": {
     "@google-cloud/language": "^3.2.1",
     "actions-on-google": "^2.7.1",
+    "body-parser": "^1.19.0",
     "firebase": "^6.2.0",
     "firebase-admin": "^8.2.0",
     "firebase-functions": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.12.0",
-    "eslint-plugin-promise": "^3.6.0"
+    "ava": "^2.1.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-node": "^9.1.0",
+    "rimraf": "^2.6.3",
+    "supertest": "^4.0.2"
   },
   "private": true
 }
