@@ -1,7 +1,8 @@
 // 'use strict';
 const { youngster } = require('./youngsterDialogue')
 const analyzeSentiment = require('./sentimentService')
-const { saveNewBeing } = require('./databaseService')
+const { saveNewBeing, getAge, incrementAgeOfCurrentCreature } = require('./databaseService')
+const { analyzeForCharacter } = require('./characterService')
 
 const feel = () => {
         console.log('hello')
@@ -19,9 +20,8 @@ const createNewLife = async (conv) => {
 }
 
 const createNewLifeName = async (conv, {name}) => {
-    const sentiment = await analyzeSentiment(conv.query)
     console.log(`new name ${name}`)
-    saveNewBeing({name, sentiment})
+    saveNewBeing({name: name, text: conv.query})
     return `<speak>
  				 <prosody pitch="+8st">
    					 <emphasis level="low"> So my new name is ${name} </emphasis>
