@@ -7,7 +7,10 @@ const {
     getCreatureCharacterScore,
     incrementAgeOfCurrentCreature,
     updateCurrentCreatureCharacter,
-    getCurrentCreatureId
+    getCurrentCreatureId,
+    saveSpokenSentence,
+    getLastSpokenSentence,
+    setStateAge
 } = require('../databaseService')
 
 const test = require("ava");
@@ -16,12 +19,7 @@ const test = require("ava");
 
 const payload = {name: 'Jack', text: 'what a world!'}
 const heardSentence = {id: 'test', text: 'this is a tasty test text'}
-
-test("saving heard sentence", async t => {
-    t.plan(1)
-    const call = await saveHeardSentence(heardSentence)
-    t.is(call, true);
-});
+const spokenSentence = {id: 'name', text: 'this is another tasty test text'}
 
 test.serial("setting currentCreature ID in state", async t => {
     t.plan(1)
@@ -48,6 +46,12 @@ test("getAgeOfCreature", async t => {
     t.is(typeof call, 'number');
 });
 
+test("setStateAge", async t => {
+    t.plan(1)
+    const call = await setStateAge(0)
+    t.is(call, true);
+});
+
 test("incrementAgeOfCurrentCreature", async t => {
     t.plan(1)
     const call = await incrementAgeOfCurrentCreature()
@@ -66,16 +70,34 @@ test("adding new document into creature", async t => {
     const call = await saveNewBeing(payload)
     t.is(call, true);
 });
-//
-// test("deleting test creature", async t => {
-//     t.plan(1)
-//     const call = await deleteCreature(payload)
-//     t.is(Object.keys(call[0])[0], '_writeTime');
-// });
-//
-// test("deleting other test creature", async t => {
-//     t.plan(1)
-//     const call = await deleteCreature({name: 'Jack'})
-//     t.is(Object.keys(call[0])[0], '_writeTime');
-// });
+
+test("saving heard sentence", async t => {
+    t.plan(1)
+    const call = await saveHeardSentence(heardSentence)
+    t.is(call, true);
+});
+
+test("saving spoken sentence", async t => {
+    t.plan(1)
+    const call = await saveSpokenSentence(spokenSentence)
+    t.is(call, true);
+});
+
+test("getLastSpokenSentence", async t => {
+    t.plan(1)
+    const call = await getLastSpokenSentence(spokenSentence.id)
+    t.is(call, spokenSentence.text);
+});
+
+test("deleting test creature", async t => {
+    t.plan(1)
+    const call = await deleteCreature(payload)
+    t.is(Object.keys(call[0])[0], '_writeTime');
+});
+
+test("deleting other test creature", async t => {
+    t.plan(1)
+    const call = await deleteCreature({name: 'Jack'})
+    t.is(Object.keys(call[0])[0], '_writeTime');
+});
 

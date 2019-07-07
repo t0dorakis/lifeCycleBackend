@@ -8,7 +8,7 @@ const feel = () => {
         console.log('hello')
 }
 const createNewLife = async (conv) => {
-    const sentiment = await analyzeSentiment(conv.query)
+
     return `<speak>
                 <!--<audio src="https://firebasestorage.googleapis.com/v0/b/newagent-68b9b.appspot.com/o/babyCry%20(online-audio-converter.com).mp3?alt=media&token=e81d3cc7-5274-4b0f-8ef0-be32391a3d2c">Crying Baby</audio>-->
                 <!--<break time="3" />-->

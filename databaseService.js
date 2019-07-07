@@ -4,6 +4,7 @@ const analyzeSentiment = require('./sentimentService')
 const creature = firestore.collection("creature")
 const state = firestore.collection("state")
 const heardSentences = firestore.collection('heardSentences')
+const spokenSentences = firestore.collection('spokenSentences')
 
 const setIdToState = async (id) => {
     return await state.doc('currentCreature').update({id: id}).then(ref => {
@@ -11,6 +12,16 @@ const setIdToState = async (id) => {
         return true
     }).catch((error) => {
         console.error(`Error setting state to follow creature with id ${id}`, error);
+        return error
+    });
+}
+
+const setStateAge = async (age) => {
+    return await state.doc('currentCreature').update({age: age}).then(ref => {
+        console.log('Success in setNewBornToState');
+        return true
+    }).catch((error) => {
+        console.error(`Error in setNewBornToState`, error);
         return error
     });
 }
@@ -35,9 +46,10 @@ const incrementAgeOfCurrentCreature = async () => {
 const incrementAge = async (doc) => {
     return doc.update({
         age: firebaseApp.firestore.FieldValue.increment(1)
-    }).then(ref => {
-        console.log('success in incrementingAge')
-        return true
+    }).then(async ref => {
+        console.log('success in incrementingAge', ref)
+        const again = await doc.get().then(doc => doc.data().age)
+        return await setStateAge(again)
     }).catch((error) => {
         console.error(`Error in incrementingAge of doc: ${doc}`, error);
         return error
@@ -85,7 +97,6 @@ const saveHeardSentence = async (payload) => {
             sentiment: sentiment
         }
     }
-    // const doc = await getCurrentCreature(payload.id)
     return heardSentences.doc(payload.id).set(row, { merge: true }).then(ref => {
         console.log('success in saving heard sentence')
         return true
@@ -94,15 +105,35 @@ const saveHeardSentence = async (payload) => {
         return error
     });
 }
+const saveSpokenSentence = async (payload) => {
+    const row = {
+        sentences: firebaseApp.firestore.FieldValue.arrayUnion(payload.text)
+    }
+    return spokenSentences.doc(payload.id).set(row, { merge: true }).then(ref => {
+        console.log('success in saving spoken sentence', payload.text)
+        return true
+    }).catch((error) => {
+        console.error(`Error in saving spoken sentence of ${payload.id}: ${payload.text}`, error);
+        return error
+    });
+}
 
 const getHeardSentences = async (creatureId) => {
-    return heardSentences.doc(creatureId).get().then(doc => {
+    return await heardSentences.doc(creatureId).get().then(doc => {
         console.log(`success in getting heard sentences of creature ${creatureId}`)
         return doc.data()
     }).catch((error) => {
         console.error(`Error in getting heard sentences of creature ${creatureId}`, error);
         return error
     });
+}
+
+const getLastSpokenSentence = async (creatureId) => {
+    const spoken =  await spokenSentences.doc(creatureId).get().then(doc => {
+        console.log(`success in getting spoken sentences of creature ${creatureId}`)
+        return doc.data()
+    }).catch(error => error)
+    return spoken.sentences[spoken.sentences.length - 1]
 }
 
 const getCreatureCharacterScore = async (creatureId) => {
@@ -135,7 +166,7 @@ const saveNewBeing = async (payload) => {
         created: firebaseApp.firestore.Timestamp.fromDate(new Date())
     }
     return await creature.add(initialCreature).then(ref => {
-        console.log('Added creature with ID: ', ref.id);
+        console.log(`Added creature with ID: ${ref.id} and name: ${payload.name} `);
         const saved = saveHeardSentence({id: ref.id, text: payload.text}).catch(error => error)
         const setId = setIdToState(ref.id).catch(error => error)
         return saved && setId
@@ -170,5 +201,8 @@ module.exports = {
     getCreatureCharacterScore,
     updateCurrentCreatureCharacter,
     setIdToState,
-    getCurrentCreatureId
+    getCurrentCreatureId,
+    saveSpokenSentence,
+    getLastSpokenSentence,
+    setStateAge
 }
