@@ -11,7 +11,8 @@ const {
     saveSpokenSentence,
     getLastSpokenSentence,
     setStateAge,
-    saveHeardSentenceOfCurrentCreature
+    saveHeardSentenceOfCurrentCreature,
+    saveSpokenSentenceOfCurrentCreature
 } = require('../databaseService')
 
 const test = require("ava");
@@ -95,6 +96,12 @@ test("getLastSpokenSentence", async t => {
 test('saveHeardSentenceOfCurrentCreature', async t => {
     t.plan(1)
     const call = await saveHeardSentenceOfCurrentCreature(justText)
+    t.is(call, true);
+})
+
+test('saveSpokenSentenceOfCurrentCreature', async t => {
+    t.plan(1)
+    const call = await saveSpokenSentenceOfCurrentCreature(justText)
     t.is(call, true);
 })
 

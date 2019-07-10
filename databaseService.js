@@ -85,6 +85,8 @@ const saveHeardSentenceOfCurrentCreature = async (text) => {
     const id = doc.id
     const age = creature.age
     const sentiment = await analyzeSentiment(text)
+    updateCurrentCreatureCharacter()
+
     const row = {
         [age]: {
             creatue_id: id,
@@ -132,6 +134,11 @@ const saveSpokenSentence = async (payload) => {
         console.error(`Error in saving spoken sentence of ${payload.id}: ${payload.text}`, error);
         return error
     });
+}
+
+const saveSpokenSentenceOfCurrentCreature = async (text) => {
+    const id = await getCurrentCreatureId()
+    return await saveSpokenSentence({id, text})
 }
 
 const getHeardSentences = async (creatureId) => {
@@ -220,6 +227,7 @@ module.exports = {
     setIdToState,
     getCurrentCreatureId,
     saveSpokenSentence,
+    saveSpokenSentenceOfCurrentCreature,
     getLastSpokenSentence,
     setStateAge
 }
