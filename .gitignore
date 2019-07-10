@@ -1,7 +1,4 @@
 build
 node_modules
+keys
 
-serviceAccountKey.json
-theo.json
-token.json
-theolocal_key_newagent-68b9b.json

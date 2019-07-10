@@ -3,8 +3,8 @@
 const language = require('@google-cloud/language');
 
 // Instantiates a client
-const projectId = 'newagent-68b9b'
-const keyFilename = 'theolocal_key_newagent-68b9b.json'
+const projectId = 'lifecycle-a1c95'
+const keyFilename = './keys/lifecycle-a1c95-cefa34fa3cf0.json'
 const languageClient = new language.LanguageServiceClient({projectId, keyFilename});
 
 const analyzeSentiment = async (text) => {

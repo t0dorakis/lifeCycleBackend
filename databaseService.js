@@ -38,6 +38,16 @@ const getCurrentCreatureId = async () => {
         })
 }
 
+
+const getCurrentCreature = async () => {
+    const id = await getCurrentCreatureId()
+    return await getCreatureById(id)
+}
+
+const getCreatureById = async (id) => {
+    return creature.doc(id)
+}
+
 const incrementAgeOfCurrentCreature = async () => {
     const doc = await getCurrentCreature()
     return incrementAge(doc)
@@ -56,23 +66,6 @@ const incrementAge = async (doc) => {
     });
 }
 
-
-const getCurrentCreature = async () => {
-    const id = await getCurrentCreatureId()
-    return await getCreatureById(id)
-}
-
-const getCreatureById = async (id) => {
-    return creature.doc(id)
-    // return await creature.doc(id).then(doc => {
-    //     console.log(`Found creature with ${id}`);
-    //     return doc
-    // }).catch((error) => {
-    //     console.error(`could not find creature with ${id}`, error);
-    //     return error
-    // });
-}
-
 const getAgeOfCreature = async (id) => {
     const doc = await getCreatureById(id)
     return doc.get()
@@ -84,6 +77,29 @@ const getAgeOfCreature = async (id) => {
             console.log('Error in getAgeOfCreature for id ', id)
             return error
         })
+}
+
+const saveHeardSentenceOfCurrentCreature = async (text) => {
+    const doc = await getCurrentCreature()
+    const creature = await doc.get().then(res => res.data())
+    const id = doc.id
+    const age = creature.age
+    const sentiment = await analyzeSentiment(text)
+    const row = {
+        [age]: {
+            creatue_id: id,
+            creature_age: age,
+            text: text,
+            sentiment: sentiment
+        }
+    }
+    return heardSentences.doc(id).set(row, { merge: true }).then(ref => {
+        console.log('success in saving heard sentence')
+        return incrementAge(doc).then(res => true).catch(error => error)
+    }).catch((error) => {
+        console.error(`Error in saving  heard sentence for age of ${age} and creature id: ${id}`, error);
+        return error
+    });
 }
 
 const saveHeardSentence = async (payload) => {
@@ -99,7 +115,7 @@ const saveHeardSentence = async (payload) => {
     }
     return heardSentences.doc(payload.id).set(row, { merge: true }).then(ref => {
         console.log('success in saving heard sentence')
-        return true
+        return incrementAgeOfCurrentCreature().then(res => true).catch(error => error)
     }).catch((error) => {
         console.error(`Error in saving  heard sentence for age of ${payload.age} and creature id: ${payload.id}`, error);
         return error
@@ -161,7 +177,7 @@ const updateCurrentCreatureCharacter = async () => {
 const saveNewBeing = async (payload) => {
     const initialCreature = {
         name: payload.name,
-        age: 0,
+        age: 1,
         character: 0.5,
         created: firebaseApp.firestore.Timestamp.fromDate(new Date())
     }
@@ -198,6 +214,7 @@ module.exports = {
     getAgeOfCreature,
     incrementAgeOfCurrentCreature,
     saveHeardSentence,
+    saveHeardSentenceOfCurrentCreature,
     getCreatureCharacterScore,
     updateCurrentCreatureCharacter,
     setIdToState,

@@ -16,10 +16,10 @@ const analyzeSentiment = require('./sentimentService')
 const express = require('express');
 const cors = require('cors');
 
-const secretKey = require('./theo.json')
+const secretKey = require('./keys/lifecycle-a1c95-cefa34fa3cf0.json')
 
 // own imports
-const { createNewLife, createNewLifeName } = require('./dialogueService.js');
+const { createNewLife, createNewLifeName, whereAmI } = require('./dialogueService.js');
 
 
 // const bodyParser = require("body-parser");
@@ -42,21 +42,28 @@ router.use(express.urlencoded({extended: true})); // to support URL-encoded bodi
 const TEST_INTENT = "start test";
 const FEEL_INTENT = 'howDoYouFeel';
 const TIME_INTENT = "start time test";
+const WHERE_AM_I_INTENT = "whereAmI";
 
 const CREATE_LIFE_INTENT = "createNewLife"
 const CREATE_LIFE_NAME_FOLLOWUP = "createNewLifeName"
+const AGE_INTENT = "ageIntent"
 
 // const agent = new WebhookClient({request, response});
 const app = dialogflowFromActions();
 
+const AppContexts = {
+    AGE: 'number'
+}
 
 app.intent(CREATE_LIFE_INTENT, async (conv, params) => {
     console.log(params)
-
     conv.ask(await createNewLife(conv));
 });
 app.intent(CREATE_LIFE_NAME_FOLLOWUP, async (conv, params) => {
     conv.ask(await createNewLifeName(conv, params));
+});
+app.intent(WHERE_AM_I_INTENT, async (conv, params) => {
+    conv.ask(await whereAmI(conv, params));
 });
 
 app.intent(FEEL_INTENT, (conv, params) => {

@@ -10,7 +10,8 @@ const {
     getCurrentCreatureId,
     saveSpokenSentence,
     getLastSpokenSentence,
-    setStateAge
+    setStateAge,
+    saveHeardSentenceOfCurrentCreature
 } = require('../databaseService')
 
 const test = require("ava");
@@ -20,12 +21,14 @@ const test = require("ava");
 const payload = {name: 'Jack', text: 'what a world!'}
 const heardSentence = {id: 'test', text: 'this is a tasty test text'}
 const spokenSentence = {id: 'name', text: 'this is another tasty test text'}
+const justText = 'My life as a test message sux'
 
 test.serial("setting currentCreature ID in state", async t => {
     t.plan(1)
     const call = await setIdToState(heardSentence.id)
     t.is(call, true);
 });
+
 
 test("getCurrentCreatureId", async t => {
     t.plan(1)
@@ -88,6 +91,12 @@ test("getLastSpokenSentence", async t => {
     const call = await getLastSpokenSentence(spokenSentence.id)
     t.is(call, spokenSentence.text);
 });
+
+test('saveHeardSentenceOfCurrentCreature', async t => {
+    t.plan(1)
+    const call = await saveHeardSentenceOfCurrentCreature(justText)
+    t.is(call, true);
+})
 
 test("deleting test creature", async t => {
     t.plan(1)
