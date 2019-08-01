@@ -12,7 +12,11 @@ const {
     getLastSpokenSentence,
     setStateAge,
     saveHeardSentenceOfCurrentCreature,
-    saveSpokenSentenceOfCurrentCreature
+    saveSpokenSentenceOfCurrentCreature,
+    saveSpokenSentenceToState,
+    saveHeardSentenceToState,
+    setCreatureAliveInState,
+    killCreature
 } = require('../databaseService')
 
 const test = require("ava");
@@ -23,6 +27,7 @@ const payload = {name: 'Jack', text: 'what a world!'}
 const heardSentence = {id: 'test', text: 'this is a tasty test text'}
 const spokenSentence = {id: 'name', text: 'this is another tasty test text'}
 const justText = 'My life as a test message sux'
+const heardObject = {text: 'a test message sux', sentiment: {score: 0.5, magnitude: 0.5}}
 
 test.serial("setting currentCreature ID in state", async t => {
     t.plan(1)
@@ -36,6 +41,26 @@ test("getCurrentCreatureId", async t => {
     const call = await getCurrentCreatureId()
     t.is(typeof call, 'string');
 });
+test("saveHeardSentenceToState", async t => {
+    t.plan(1)
+    const call = await saveHeardSentenceToState(heardObject)
+    t.is(call, true);
+});
+test("saveSpokenSentenceToState", async t => {
+    t.plan(1)
+    const call = await saveSpokenSentenceToState(justText)
+    t.is(call, true);
+});
+test("killCreature", async t => {
+    t.plan(1)
+    const call = await killCreature()
+    t.is(call, true);
+});
+test("setCreatureAliveInState", async t => {
+    t.plan(1)
+    const call = await setCreatureAliveInState()
+    t.is(call, true);
+});
 
 test("getting average character score", async t => {
     t.plan(1)
@@ -43,6 +68,7 @@ test("getting average character score", async t => {
     console.log('avarage score is', call)
     t.is(typeof call, 'number');
 });
+
 
 test("getAgeOfCreature", async t => {
     t.plan(1)

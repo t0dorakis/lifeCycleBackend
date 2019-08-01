@@ -25,7 +25,9 @@ const {
     whereAmI,
     areYouMama,
     whyDoYouLook,
-    thisIsNotWhatIexpected
+    thisIsNotWhatIexpected,
+    reasonFeel,
+    takeLife
 } = require('./dialogueService.js');
 
 
@@ -56,6 +58,8 @@ const WHERE_AM_I_INTENT = "whereAmI";
 const ARE_YOU_MY_MAMA_INTENT = "areYouMama";
 const WHY_DO_YOU_LOOK = "whyDoYouLook"
 const THIS_IS_NOT_WHAT_I_EXPECTED = 'thisIsNotWhatIexpected'
+const REASON_FEELING_INTENT = 'reasonFeel'
+const TAKE_LIFE = 'takeLife'
 // const agent = new WebhookClient({request, response});
 const app = dialogflowFromActions();
 
@@ -81,6 +85,13 @@ app.intent(WHY_DO_YOU_LOOK, async (conv, params) => {
 });
 app.intent(THIS_IS_NOT_WHAT_I_EXPECTED, async (conv, params) => {
     conv.ask(await thisIsNotWhatIexpected(conv, params));
+});
+app.intent(REASON_FEELING_INTENT, async (conv, params) => {
+    conv.ask(await reasonFeel(conv, params));
+});
+
+app.intent(TAKE_LIFE, async (conv, params) => {
+    conv.ask(await takeLife(conv, params));
 });
 
 app.intent(FEEL_INTENT, (conv, params) => {
@@ -126,5 +137,3 @@ router.post('/sentimentAnalysis', async (req, res, next) => {
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);
 exports.api = functions.https.onRequest(router);
 exports._middleware = functions.https.onRequest(app);
-// The text to analyze
-// const text = 'Hello, world!';

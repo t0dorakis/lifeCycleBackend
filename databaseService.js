@@ -25,6 +25,67 @@ const setStateAge = async (age) => {
         return error
     });
 }
+const killCreature = async () => {
+    return await state.doc('currentCreature').update({alive: false}).then(ref => {
+        console.log('Success in killCreature');
+        return true
+    }).catch((error) => {
+        console.error(`Error in killCreature`, error);
+        return error
+    });
+}
+
+const setCreatureAliveInState = async () => {
+    return await state.doc('currentCreature').update({alive: true}).then(ref => {
+        console.log('Success in setCreatureAliveInState');
+        return true
+    }).catch((error) => {
+        console.error(`Error in setCreatureAliveInState`, error);
+        return error
+    });
+}
+
+
+const saveHeardSentenceToState = async (payload) => {
+    return await state.doc('currentCreature').update({lastHeardSentence: {text: payload.text, sentiment: payload.sentiment}}).then(ref => {
+        console.log('Success in saveHeardSentenceToState');
+        return true
+    }).catch((error) => {
+        console.error(`Error in saveHeardSentenceToState`, error);
+        return error
+    });
+}
+const saveSpokenSentenceToState = async (text) => {
+    return await state.doc('currentCreature').update({lastSpokenSentence: text}).then(ref => {
+        console.log('Success in saveHeardSentenceToState');
+        return true
+    }).catch((error) => {
+        console.error(`Error in saveHeardSentenceToState`, error);
+        return error
+    });
+}
+
+const setStateCharacter = async (character) => {
+    return await state.doc('currentCreature').update({character: character}).then(ref => {
+        console.log('Success in setStateCharacter');
+        return true
+    }).catch((error) => {
+        console.error(`Error in setStateCharacter`, error);
+        return error
+    });
+}
+
+const getCurrentCharacterScore = async () => {
+    return await state.doc('currentCreature').get()
+        .then(doc => {
+            console.log(`Success in getCurrentCharacterScore = `, doc.data().character);
+            return doc.data().character
+        })
+        .catch(error => {
+            console.error(`Error in getCurrentCharacterScore`, error);
+            return error
+        })
+}
 
 const getCurrentCreatureId = async () => {
     return await state.doc('currentCreature').get()
@@ -86,7 +147,7 @@ const saveHeardSentenceOfCurrentCreature = async (text) => {
     const age = creature.age
     const sentiment = await analyzeSentiment(text)
     updateCurrentCreatureCharacter()
-
+    saveHeardSentenceToState({text: text, sentiment: sentiment})
     const row = {
         [age]: {
             creatue_id: id,
@@ -117,7 +178,7 @@ const saveHeardSentence = async (payload) => {
     }
     return heardSentences.doc(payload.id).set(row, { merge: true }).then(ref => {
         console.log('success in saving heard sentence')
-        return incrementAgeOfCurrentCreature().then(res => true).catch(error => error)
+        return true
     }).catch((error) => {
         console.error(`Error in saving  heard sentence for age of ${payload.age} and creature id: ${payload.id}`, error);
         return error
@@ -138,6 +199,7 @@ const saveSpokenSentence = async (payload) => {
 
 const saveSpokenSentenceOfCurrentCreature = async (text) => {
     const id = await getCurrentCreatureId()
+    saveSpokenSentenceToState(text)
     return await saveSpokenSentence({id, text})
 }
 
@@ -169,10 +231,11 @@ const getCreatureCharacterScore = async (creatureId) => {
 const updateCurrentCreatureCharacter = async () => {
     const currentCreature = await getCurrentCreature()
     const characterScore = await getCreatureCharacterScore(currentCreature.id)
-    return currentCreature.update({character: characterScore})
+    await setStateCharacter(characterScore)
+    return await currentCreature.update({character: characterScore})
         .then(
         ref => {
-            console.log(`Success in updateCreatureChracter for creatureID: ${currentCreature.id} and a score of ${characterScore}`)
+            console.log(`Success in updateCurrentCreatureCharacter for creatureID: ${currentCreature.id} and a score of ${characterScore}`)
             return true
         }
     ).catch(error => {
@@ -229,5 +292,10 @@ module.exports = {
     saveSpokenSentence,
     saveSpokenSentenceOfCurrentCreature,
     getLastSpokenSentence,
-    setStateAge
+    setStateAge,
+    saveSpokenSentenceToState,
+    saveHeardSentenceToState,
+    killCreature,
+    setCreatureAliveInState,
+    getCurrentCharacterScore
 }
